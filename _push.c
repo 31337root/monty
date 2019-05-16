@@ -1,5 +1,7 @@
 #include "monty.h"
 
+#define UNUSED(x) (void)(x)
+
 /**
  *
  *
@@ -12,6 +14,8 @@ void _push(stack_t **stack, unsigned int line_number)
 {
 
 	stack_t *new;
+
+	UNUSED(line_number);
 
 	new = malloc(sizeof(stack_t));
 

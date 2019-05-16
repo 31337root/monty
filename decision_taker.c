@@ -1,5 +1,7 @@
 #include "monty.h"
 
+#define UNUSED(x) (void)(x)
+
 /**
  *
  *
@@ -25,22 +27,24 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 		{NULL, NULL}
 	};
 
+	UNUSED(selection);
+
 	while (i < 8)
 	{
-		if ((strcmp(*opcode, options[i].opcode)) == 0)
+		if ((strcmp(opcode, options[i].opcode)) == 0)
 		{
 			if ((strcmp(options[i].opcode, "push")) == 0)
 			{
 				value = atoi(op_arg);
 			}
-			void (*selection)(stack_t **, unsigned int) = options[i].f;
+			selection = options[i].f;
 
 			(*selection)(stack, line_number);
 			return;
 		}
 		i++;
 	}
-	if (i = 8)
+	if (i == 8)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s", line_number, opcode);
 		/*LOOK FOR SOMETHING TO FREE*/

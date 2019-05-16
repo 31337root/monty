@@ -1,5 +1,7 @@
 #include "monty.h"
 
+#define UNUSED(x) (void)(x)
+
 /**
  *
  *
@@ -10,6 +12,8 @@
 
 void _pall(stack_t **stack, unsigned int line_number)
 {
+	UNUSED(line_number);
+
 	if (*stack)
 	{
 		while ((*stack)->next)
