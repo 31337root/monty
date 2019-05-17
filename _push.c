@@ -3,12 +3,15 @@
 #define UNUSED(x) (void)(x)
 
 /**
+ * _push - pushes an element to the stack.
  *
+ *@stack: pointer to the memory stack
  *
+ *@line_number: actual line number of the current opened file
  *
- *
- *
-*/
+ * Return: void.
+ */
+
 
 void _push(stack_t **stack, unsigned int line_number)
 {
