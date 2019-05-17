@@ -22,11 +22,11 @@ void _pall(stack_t **stack, unsigned int line_number)
 		}
 		while ((*stack)->prev)
 		{
-			printf("%d\n", value);
+			printf("%d\n", (*stack)->n);
 			*stack = (*stack)->prev;
 		}
 		if (!(*stack)->prev)
-			printf("%d\n", value);
+			printf("%d\n", (*stack)->n);
 		return;
 	}
 	else

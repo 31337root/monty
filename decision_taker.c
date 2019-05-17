@@ -35,7 +35,15 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 		{
 			if ((strcmp(options[i].opcode, "push")) == 0)
 			{
-				value = atoi(op_arg);
+				if (op_arg)
+				{
+					value = atoi(op_arg);
+				}
+				else
+				{
+					fprintf(stderr, "L%d: usage: push integer\n", line_number);
+					exit(EXIT_FAILURE);
+				}
 			}
 			selection = options[i].f;
 

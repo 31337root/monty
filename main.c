@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 			if (opcode)
 			{
-				op_arg = strtok(lineptr, delim);
+				op_arg = strtok(NULL, delim);
 
 				decision_taker(opcode, op_arg, line_number, &stack);
 			}

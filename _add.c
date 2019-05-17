@@ -14,7 +14,7 @@ void _add(stack_t **stack, unsigned int line_number)
 	{
 		*stack = (*stack)->next;
 	}
-	if ((*stack)->next)
+	if ((*stack)->prev)
 	{
 		(*stack)->prev->n += (*stack)->n;
 		_pop(stack, line_number);
