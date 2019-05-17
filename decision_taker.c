@@ -38,6 +38,9 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 				if (op_arg)
 				{
 					value = atoi(op_arg);
+					selection = options[i].f;
+					(*selection)(stack, line_number);
+					return;
 				}
 				else
 				{
