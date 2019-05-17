@@ -5,9 +5,11 @@ int value = 0;
 /**
  * main - Entry point.
  *
+ *@argc: number of command line arguments
  *
+ *@argv: array of strings with the command line arguments
  *
- *
+ * Return: success allways 0
 */
 
 int main(int argc, char **argv)

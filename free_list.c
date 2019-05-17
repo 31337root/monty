@@ -1,12 +1,14 @@
 #include "monty.h"
 
 /**
+ * free_list - free list.
+ *
+ *@stack: pointer to the memory stack
  *
  *
- *
- *
- *
-*/
+ * Return: void.
+ */
+
 
 void free_list(stack_t **stack)
 {
