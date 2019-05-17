@@ -46,6 +46,7 @@ void _pop(stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
 void decision_taker(char *, char *, unsigned int, stack_t **);
-
+void _mul(stack_t **stack, unsigned int line_number);
+void _sub(stack_t **stack, unsigned int line_number);
 
 #endif /* __MONTY_H__ */
