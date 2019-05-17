@@ -40,7 +40,8 @@ int main(int argc, char **argv)
 			line_number++;
 		}
 		fclose(fp);
-		/* FREE EVERYTHING LEFT HERE*/
+		free(lineptr);
+		free_list();
 		return (0);
 	}
 	perror("USAGE: monty file.");

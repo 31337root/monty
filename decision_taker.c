@@ -35,7 +35,7 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 		{
 			if ((strcmp(options[i].opcode, "push")) == 0)
 			{
-				if (op_arg)
+				if (op_arg && op_arg[0] >= '0' && op_arg[0] <= '9')
 				{
 					value = atoi(op_arg);
 					selection = options[i].f;
