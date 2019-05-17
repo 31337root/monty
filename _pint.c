@@ -1,11 +1,14 @@
 #include "monty.h"
 
 /**
+ * _pint - prints the value at the top of the stack, followed by a new line
  *
+ *@stack: pointer to the memory stack
  *
+ *@line_number: actual line number of the current opened file
  *
- *
-*/
+ * Return: void.
+ */
 
 void _pint(stack_t **stack, unsigned int line_number)
 {
