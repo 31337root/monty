@@ -46,6 +46,6 @@ void _pop(stack_t **stack, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
 void decision_taker(char *, char *, unsigned int, stack_t **);
-
+void free_list(stack_t **stack);
 
 #endif /* __MONTY_H__ */

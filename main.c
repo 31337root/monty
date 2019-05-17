@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 		}
 		fclose(fp);
 		free(lineptr);
-		free_list();
+		free_list(&stack);
 		return (0);
 	}
 	perror("USAGE: monty file.");
