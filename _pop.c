@@ -1,11 +1,14 @@
 #include "monty.h"
 
 /**
+ * _pop - removes the top element of the stack.
  *
+ *@stack: pointer to the memory stack
  *
+ *@line_number: actual line number of the current opened file
  *
- *
-*/
+ * Return: void.
+ */
 
 void _pop(stack_t **stack, unsigned int line_number)
 {
