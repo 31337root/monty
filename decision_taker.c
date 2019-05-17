@@ -24,12 +24,14 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 		{"pall", &_pall},
 		{"pint", &_pint},
 		{"nop", &_nop},
+		{"mul", &_mul},
+		{"sub", &_sub},
 		{NULL, NULL}
 	};
 
 	UNUSED(selection);
 
-	while (i < 8)
+	while (i < 10)
 	{
 		if ((strcmp(opcode, options[i].opcode)) == 0)
 		{
@@ -55,7 +57,7 @@ void decision_taker(char *opcode, char *op_arg, unsigned int line_number, stack_
 		}
 		i++;
 	}
-	if (i == 8)
+	if (i == 10)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s", line_number, opcode);
 		/*LOOK FOR SOMETHING TO FREE*/
